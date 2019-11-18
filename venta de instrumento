@@ -1,5 +1,6 @@
 use DBTienda_Instrumento
 go
+//Dios te bendiga Att: Cindy
 
 create table TblUsuario
 (
