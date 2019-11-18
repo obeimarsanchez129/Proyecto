@@ -7,7 +7,7 @@ FKUsuario_TblPersonas Varchar (50) primary key,
 Contraseña varchar (50) not null,
 FKId_TblEstado int not null,
 FKId_TblRol int not null
-)
+);
 use DBTienda_Instrumento
 go
 
@@ -17,7 +17,7 @@ FKUsuario_TblPersonas Varchar (50) primary key,
 Contraseña varchar (50) not null,
 FKId_TblEstado int not null,
 FKId_TblRol int not null
-)
+);
 
 create table TblPersonas
 (
@@ -26,19 +26,19 @@ Nombre varchar (50) not null,
 Apellido varchar (50) not null,
 Telefono varchar (50) not null,
 Correo varchar (50) not null
-)
+);
 
 create table TblEstado
 (
 Id int primary key,
 Descripcion varchar (50) not null
-)
+);
 
 create table TblRol
 (
 Id int primary key ,
 Descripcion varchar (50) not null
-)
+);
 
 create table TblFactura
 (
@@ -46,19 +46,19 @@ N_Factura int identity (1,1) primary key ,
 FKUsuario_TblPersonas varchar (50) not null,
 FKUsuario_TblPersonas_TblUsuario varchar (50) not null,
 FKCodigo_TblFormaPago int not null
-)
+);
 
 create table TblFormaPago
 (
 Codigo int primary key ,
 Decripcion varchar (50) not null
-)
+);
 
 create table TblHistorial
 (
 FKN_Factura_TblFactura int not null,
 FKUsuario_TblPersonas varchar (50) not null
-)
+);
 
 alter table TblUsuario
 add constraint FKUsuario_siloencuentrasteregalomill
